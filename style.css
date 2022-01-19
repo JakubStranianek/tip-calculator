@@ -1,0 +1,166 @@
+:root {
+    --main-bg-color: #C5E4E7;
+    --darkGreen: #3D6666;
+    --smaragd: #00474B;
+    --textGreen: #26C2AE;
+    --textBox: #F3F9FA;
+    --hColor: #5E7A7D;
+  }
+
+body {
+    margin: 0;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.mainContainer {
+    width: 920px;
+    height: 481px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main {
+    width: 379px;
+    height: 388px;
+    border-radius: 15px;
+}
+
+.firstPart {
+    background-color: white;
+}
+
+.secondPart {
+    background-color: var(--smaragd);
+    display: flex;
+    flex-direction: column;
+}
+
+.contentFirst {
+    width: 379px;
+    height: 78px;
+}
+
+.contentSecond {
+    width: 390px;
+    height: 152px;
+    margin-top: 42px;
+}
+
+.contentThird {
+    width: 333px;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1, input, button, h2, p, h3, h4 {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 16px;
+    color: var(--hColor);
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--textGreen);
+    margin-top: 10px;
+}
+
+h4 {
+    color: var(--darkGreen);
+    letter-spacing: 10px;
+    line-height: 24px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--hColor);
+}
+
+.in {
+    width: 100%;
+    height: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--smaragd);
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    padding-right: 20px;
+}
+
+.inDollar {
+    background: url(images/icon-dollar.svg) no-repeat scroll 15px 15px, var(--textBox);
+}
+
+.inPerson {
+    background: url(images/icon-person.svg) no-repeat scroll 15px 15px, var(--textBox);
+}
+
+button, .inButton {
+    width: 117px;
+    height: 48px;
+    background-color: var(--smaragd);
+    font-size: 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.inButton {
+    background-color: var(--textBox);
+    color: var(--smaragd);
+    text-align: center;
+    padding: 0;
+}
+
+.contentSecond > button:nth-child(2),
+.contentSecond > button:nth-child(5) {
+    margin-left: 0;
+}
+
+.contentSecond > button:nth-child(2),
+.contentSecond > button:nth-child(3),
+.contentSecond > button:nth-child(4) {
+    margin-top: 0;
+}
+
+.reset {
+    background-color: var(--textGreen);
+    color: var(--smaragd);
+    font-weight: bold;
+    font-size: 20px;
+    width: 333px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+}

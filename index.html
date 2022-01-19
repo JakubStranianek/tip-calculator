@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <div class="wrapContainer">
+    <h4>SPLI<br>TTER</h4>
+    <div class="mainContainer">
+        <div class="main firstPart">
+          
+          <div class="contentFirst">
+            <h1>Bill</h1>
+            <input type="text" name="textBoxAmount" id="tbAmount" class="in inDollar">
+          </div>
+
+          <div class="contentSecond">
+            <h1>Select Tip %</h1>
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="text" placeholder="Custom" class="inButton">
+          </div>
+
+          <div class="contentFirst">
+            <h1>Number of People</h1>
+            <input type="text" name="textBoxPeople" id="tbPeople" class="in inPerson">
+          </div>
+
+        </div>
+
+        <div class="main secondPart">
+            <div class="contentThird">
+              <div>
+                <h2>Tip Amount</h2>
+                <p>/ person</p>
+              </div>
+                <h3>$4.27</h3>
+            </div>
+
+            <div class="contentThird">
+              <div>
+                <h2>Total</h2>
+                <p>/ person</p>
+              </div>
+              <h3>$32.79</h3>
+          </div>
+
+          <button class="reset">RESET</button>
+        </div>
+
+    </div>
+  </div>  
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
