@@ -47,6 +47,8 @@ body {
     background-color: var(--smaragd);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contentFirst {
@@ -65,7 +67,6 @@ body {
     height: 71px;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -174,7 +175,6 @@ button:focus {
     width: 333px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 80px;
 }
 
 .reset:hover {
@@ -216,10 +216,6 @@ input:invalid {
     }
 
     .firstPart, .secondPart {
-        margin-top: 40px;
-    }
-
-    .reset {
         margin-top: 40px;
     }
 }
