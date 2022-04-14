@@ -12,6 +12,8 @@ body {
     background-color: var(--main-bg-color);
     width: 100%;
     height: 100vh;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
 }
 
 .wrapContainer {
@@ -57,8 +59,8 @@ body {
 }
 
 .contentSecond {
-    width: 400px;
-    height: 152px;
+    width: 410px;
+    height: max-content;
     margin-top: 42px;
 }
 
@@ -69,10 +71,6 @@ body {
     justify-content: space-between;
     margin-right: auto;
     margin-left: auto;
-}
-
-h1, input, button, h2, p, h3, h4, .reset {
-    font-family: 'SpaceMono', serif;
 }
 
 h1 {
@@ -141,6 +139,15 @@ button, .inButton {
     border-radius: 5px;
     margin-left: 15px;
     margin-top: 15px;
+}
+
+button:hover {
+    background-color: #9FE8DF;
+    cursor: pointer;
+}
+
+input { 
+    cursor: pointer;
 }
 
 button:focus {
@@ -212,10 +219,19 @@ input:invalid {
     }
     .mainContainer {
         flex-direction: column;
-        padding-bottom: 60px;
+        padding-bottom: 80px;
     }
 
-    .firstPart, .secondPart {
+    .firstPart {
         margin-top: 40px;
+    }
+
+    .secondPart {
+        margin-top: 80px;
+    }
+
+    button, .inButton {
+        width: 47%;
+        margin-left: 0;
     }
 }
